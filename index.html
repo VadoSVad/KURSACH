@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEA BATTLE</title>
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+<div class="app">
+    <div class="app-header">
+        <h1 class="app-title">SEA BATTLE</h1>
+    </div>
+    <div class="app-body">
+        <div class = "battlefield" data-side="player"></div>
+        <div class="app-menu">
+            <div class="app-actions" data-scene="preparation">
+                <button class="app-action" data-computer="simple" disabled>
+                    Play with bot
+                </button>
+                <button class="app-action" data-type="random" disabled>
+                    Play with people
+                </button>
+                <button class="app-action" data-type="challenge" disabled>
+                    Let's go
+                </button>
+                <button class="app-action" data-action="manually">
+                    I do it myself
+                </button>
+                <button class="app-action" data-action="randomize">
+                    Random
+                </button>
+            </div>
+            <div class="app-actions hidden" data-scene="computer">
+                <div class="battlefield-status">Ваш ход</div>
+                <button class="app-action" data-action="gaveup">Сдаться</button>
+                <button class="app-action" data-action="again">
+                Играть еще раз
+                </button>
+            </div>
+        </div>
+        <div class = "battlefield" data-side="opponent"></div>
+    </div>
+</div>
+<footer class = "footer">© 2022. D0 Perfect Все права защищены</footer>
+
+<script src="src/additional.js"></script>
+<script src="src/Mouse.js"></script>
+
+<script src="src/Application.js"></script>
+<script src="src/Scene.js"></script>
+<script src="src/scenes/PreparationScene.js"></script>
+<script src="src/scenes/ComputerScene.js"></script>
+
+<script src="src/Battlefield.js"></script>
+<script src="src/BattlefieldView.js"></script>
+
+<script src="src/Ship.js"></script>
+<script src="src/ShipView.js"></script>
+
+<script src="src/Shot.js"></script>
+<script src="src/ShotView.js"></script>
+
+<script src="src/script.js"></script>
+</body>
+</html>
